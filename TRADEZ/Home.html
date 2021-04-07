@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Home Page </title>
+ <link href="b.css" rel="stylesheet" type="text/css"/>
+ <script>
+
+ window.onload = function(){
+   var http = new XMLHttpRequest();
+   var titleBan = document.getElementById('title').innerHTML;
+   var buyBTN = document.getElementById('buyBTN');
+   var tradeBTN = document.getElementById('tradeBTN');
+
+   http.onreadystatechange = function(){
+     if (http.readyState == 4 && http.status ==200){
+
+       var textResponse = http.responseText;
+
+       var texting = JSON.parse(textResponse);
+       if (texting.UserName == "TRADEZ"){
+            document.getElementById('title').innerHTML = texting.UserName;
+            document.getElementById("btnText").innerHTML = "Login";
+            buyBTN.style.visibility='hidden';
+            tradeBTN.style.visibility='hidden';
+
+       }else if(texting.UserName != "TRADEZ" ){
+            document.getElementById('title').innerHTML = "Welcome to TRADEZ "+texting.UserName;
+            document.getElementById("btnText").innerHTML = "SignOut";
+            buyBTN.style.visibility='visible';
+            tradeBTN.style.visibility='visible';
+       }
+
+
+     }
+   };
+   http.open('GET', 'dataFile.json',true);
+   http.send();
+
+ };
+ function openNav() {
+   document.getElementById("moving").style.height = "150%";
+ }
+
+
+ function closeNav() {
+   document.getElementById("moving").style.height = "1%";
+ }
+
+ function xmm() {
+   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange= function(){
+     if(this.readystatechange==4 && this.status==200){
+       document.getElementById("XML").innerHTML=this.responseText;
+     }
+   };
+   xhttp.open("GET","ajax_info.txt",true);
+   xhttp.send();
+ }
+
+
+ </script>
+
+ </head>
+
+ <body>
+
+      <div id="moving" class="MENU">
+        <a href="javascript:void(0)" class="XX" onclick="closeNav()">&times;</a>
+        <div class="MENU-NU">
+          <a href="#">YOUR PROFILE</a>
+          <a href="#">YOUR ACTIVITIES</a>
+          <a href="#">YOUR ITEMS</a>
+          <a href="#">YOUR WHISHLIST</a>
+
+        </div>
+      </div>
+      <span class="lar" onclick="openNav()">&#9783;</span>
+
+  <span class="lar" style="font-weight:bold;margin-left:60px" id="title">TRADEZ</span>
+
+
+
+      <div class="container">
+
+     <nav class="navbar">
+       <ul>
+         <li><a href="#home">Home </a></li>
+         <li><a href="#about">About </a></li>
+         <li><form class="" action="/contactUs.html" method="post">
+           <button style="font-size:15px">Contact</button>
+         </form></li>
+         <li><a href="#news">News </a></li>
+          <li> <form class="" action="/WebProfile.html" method="post">
+            <button id="btnText" style="font-size:15px;">LOGIN </button>
+          </form></li>
+         </ul>
+         </nav>
+
+         <section id="home">
+           <h1 id="lead" style="text-shadow: 3px 3px #000000;"> We don't just build websites, we build websites that TRADEZ</h1>
+           </section>
+           <section id="about">
+             <h1 style="text-shadow: 3px 3px #000000;"> About</h1>
+             <p id="lead">TRADEZ is a platform for people to connect in order to trade, buy, or sell items.</p>
+             </section>
+
+               <section id="news">
+                 <h1 style="text-shadow: 3px 3px #000000;">News</h1>
+                 <p id="lead"> Shop Free Delivery Products online with best offers and get home delivery across UAE </p>
+                 </section>
+</div>
+
+<div class="title">
+  <form action="/buyItems.html" method="post" id="formleft">
+
+    <button name="button" class="no" style="text-align:center;width:160px" id="buyBTN">BUY</button>
+  </form>
+  <form  action="/startTrade.html" method="post"id="formright">
+    <button name="button" class="no" style="text-align:center;width:160px" id="tradeBTN">TRADE</button>
+  </form>
+
+</div>
+
+
+
+   </body>
+   </html>

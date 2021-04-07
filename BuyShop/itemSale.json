@@ -1,0 +1,88 @@
+[{
+  "Name": "Ipad 6th Generation",
+  "ImgName": "Ipad",
+  "trader": "Katie456",
+  "Age":2,
+  "Price":700,
+  "Category": "Electronics and Wearables",
+  "Description":"Silver 6th Generation Ipad",
+  "GenInfo": "Used Before, but still in a good condition. It comes with a case."
+  },
+
+  {
+    "Name": "Hp Laptop",
+    "ImgName": "Laptop",
+    "trader": "hugo_fr",
+    "Age":2,
+    "Price":1150,
+    "Category": "Electronics and Wearables",
+    "Description":"Silver HP Corei7 7th Generation",
+    "GenInfo": "Medium size"
+    },
+    {
+      "Name": "Gucci Bag",
+      "ImgName": "Gucci",
+      "trader": "rab_rha",
+      "Age":1,
+      "Price":4000,
+      "Category": "Fashion",
+      "Description":"Beige Color, size medium",
+      "GenInfo": "Barely Used Before, still in a Very good condition."
+      },
+      {
+        "Name": "Micheal Kors Wallet",
+        "ImgName": "MichealKors",
+        "trader": "Lewis_ca",
+        "Age":1,
+        "Price":550,
+        "Category": "Fashion",
+        "Description":"Brown, Beige Color",
+        "GenInfo": "Less than a Year"
+        },
+
+          {
+            "Name": "Louis Vuitton",
+            "ImgName": "LouisVuitton",
+            "trader": "Robert_De",
+            "Age":1,
+            "Price":2350,
+            "Category": "Fashion",
+            "Description":"Brown and Beige Color",
+            "GenInfo": ""
+            },
+          {
+            "Name": "Iphone Earphones",
+            "ImgName": "Earphones",
+            "trader": "Scott_Ca322",
+            "Age":1,
+            "Price":150,
+            "Category": "Electronics and Wearables",
+            "Description":"White wired earphones",
+            "GenInfo": "Not Used"
+            },
+            {
+              "Name": "Make Up Kit Rimmel",
+              "ImgName": "MakeUp",
+              "trader": "Klay_544",
+              "Age":1,
+              "Price":190,
+              "Category": "Cosmetics and Body Care",
+              "Description":"Not Used Kit",
+              "GenInfo": "Not Used"
+              },
+
+            {
+              "Name": "Victoria's Secret Perfume",
+              "ImgName": "Perfume",
+              "trader": "joon_jae",
+              "Age":1,
+              "Price":250,
+              "Category": "Cosmetics and Body Care",
+              "Description":"Best Essence",
+              "GenInfo": ""
+              }
+
+
+
+
+]

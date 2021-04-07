@@ -1,0 +1,73 @@
+[{
+  "Name": "Iphone X",
+  "ImgName": "IphoneX",
+  "trader": "John_Willy",
+  "Age":2,
+  "Price":1700,
+  "Category": "Electronics and Wearables",
+  "Description":"Silver",
+  "GenInfo": "Used Before, but still in a good condition. It comes with a case."
+  },
+
+  {
+    "Name": "Louis Vuitton",
+    "ImgName": "LouisVuitton",
+    "trader": "Robert_De",
+    "Age":1,
+    "Price":2350,
+    "Category": "Fashion",
+    "Description":"Brown and Beige Color",
+    "GenInfo": ""
+    },
+    {
+      "Name": "Wii Resort Games",
+      "ImgName": "WiiResortGames",
+      "trader": "KatieReb",
+      "Age":9,
+      "Price":30,
+      "Category": "Video Games",
+      "Description":"Adaptable with Wii first model",
+      "GenInfo": ""
+      },
+      {
+        "Name": "Beats Headphones",
+        "ImgName": "BeatsHeadphones",
+        "trader": "Sarah123_Hill",
+        "Age":1,
+        "Price":700,
+        "Category": "Electronics and Wearables",
+        "Description":"Wired, Black Color",
+        "GenInfo": "Less than a Year. Used Before, but still in a very good condition"
+        },
+        {
+          "Name": "Air pods 1",
+          "ImgName": "Airpods1",
+          "trader": "Yoon_Seri145",
+          "Age":2,
+          "Price":300,
+          "Category": "Electronics and Wearables",
+          "Description":"White color",
+          "GenInfo": "With a red case"
+          },
+          {
+            "Name": "Apple Watch Series 5",
+            "ImgName": "AppleWatch",
+            "trader": "HyunBin198",
+            "Age":1,
+            "Price":2050,
+            "Category": "Electronics and Wearables",
+            "Description":"Black color, with black sports band, cellular and GPS",
+            "GenInfo": "Less Than a Year"
+            },
+            {
+              "Name": "Hp Laptop",
+              "ImgName": "Laptop",
+              "trader": "hugo_fr",
+              "Age":2,
+              "Price":1150,
+              "Category": "Electronics and Wearables",
+              "Description":"Silver HP Corei7 7th Generation",
+              "GenInfo": "Medium size"
+              }
+
+]

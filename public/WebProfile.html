@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> LogIN Page </title>
+  <link href="HOME.css" rel="stylesheet" type="text/css"/>
+ </head>
+
+  <body>
+<div class="one">
+  <div class="signin">
+    <div class="box">
+      <div id="yes"> </div>
+
+        <button type="button" class="toggle" onclick="login()"> Log In </button>
+
+        <button type="button" class="toggle" onclick="register()">Register</button>
+
+      </div>
+
+      <form id="login" class="input-group" method="POST" action="/Home">
+      <label> <input type="text" class="input-field" placeholder="User Id" required  id="UserFound" name="UserName"></label>
+        <label><input type="password" class="input-field" placeholder="Enter Password" required id="Password" name="Password"></label>
+        <input type="checkbox" class="check-box"> <span> Remember Password </span>
+        <button type="submit" class="sumbit-btn">Log in </button>
+        </form>
+
+    <form id="register" class="input-group" action="/NewHome" method="POST" style="visibility:hidden">
+    <input type="email" class="input-field" placeholder="Email Id" required name="EmailAddress">
+    <input type="text" class="input-field" placeholder="User Id" required name="UserName">
+    <input type="password" class="input-field" placeholder="Enter Password" required name="Password">
+    <input type="text" class="input-field" placeholder="Enter Address" required name="Address">
+    <input type="text" class="input-field" placeholder="Enter Phone Number" required name="PhoneNumber">
+    <input type="checkbox" class="check-box" required> <span> By clicking on this, you agree to our Terms, Data Policy and Cookie Policy. </span>
+    <button type="submit" class="sumbit-btn">Register </button>
+
+    </form>
+
+
+</div>
+  </div>
+
+  <script>
+
+  function login(){
+
+    document.getElementById('login').style.visibility = "visible";
+    document.getElementById('register').style.visibility = "hidden";
+
+
+  }
+
+
+    function register(){
+
+      document.getElementById('login').style.visibility = "hidden";
+      document.getElementById('register').style.visibility = "visible";
+
+
+    }
+
+  </script>
+
+    </body>
+    </html>

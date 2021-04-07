@@ -1,0 +1,48 @@
+Profile page
+
+-in traded items and bought items : 1 button (review)
+
+-in wishlist : 2 parts one for trade and one for buy ... 2 buttons : 1 delete - 2 contact the seller 
+
+-pending items: 2 parts one for trade and one for buy ... 1 button contact the trader or seller
+
+-Your items: 2 parts one for trade and one for buy ... 1 button : delete item
+
+-Your profile: we can edit the name address phone and delivery .... add notification part to accept or reject offers and ratings or messages (tabbed part)
+
+##################################################################################################################################
+
+In sell your items and trade your items 
+
+-button to delete the items
+
+-button to start trading or selling (trade a price and item should be selected)
+
+-add buttons
+
+-hover over the item to add characteristics ---- > add input in the table and edit and save buttons and publish if the item is new
+
+-the publish button should have everything inserted in the input
+
+---------The button saves if there is no picture selected
+---------Delete Items with the inputs
+
+################################################################################################################################
+
+Buy Items and trade items
+
+-change the count page to an arrow
+
+-button for the buy items only to add to the wish list
+
+-the count is not more than 7 items, then a table will be created (if else)
+
+-work on the filters
+
+-add the items from the databse
+
+################################################################################################################################
+
+from slide show to table:
+
+your items in stock - wish list

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trade Items</title>
+    <link rel="stylesheet" href="startITrades.css" type="text/css">
+  </head>
+  <body class="backgroundImage">
+
+    <div id="moving" class="MENU">
+
+        <a href="javascript:void(0)" class="XX" onclick="closeNav()">&times;</a>
+        <div class="MENU-NU">
+          <a href="#">YOUR PROFILE</a>
+          <a href="#">YOUR ACTIVITIES</a>
+          <a href="#">YOUR ITEMS</a>
+            <a href="#">YOUR WHISHLIST</a>
+
+        </div>
+      </div>
+
+      <span class="lar spanclass" onclick="openNav()">&#9783;</span>
+
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="Home.html#home">Home </a></li>
+          <li><a href="Home.html#about">About </a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="Home.html#news">News </a></li>
+          <div class="dropDownMenu">
+          <li><a href="#nevigate">Navigate </a></li>
+          <div class="dropDownOptions">
+            <table>
+              <tr  class="dropDownOptions" style="margin-left:-2px">
+                <td><a href="buyItems.html" style="padding: 12px 16px;">Buy item</a></td>
+                <td> <img src="buy.png" alt="" width=30px height=30px style="margin-left:16px"></td>
+              </tr>
+            </table>
+
+            <table>
+              <tr  class="dropDownOptions" style="margin-left:-2px;margin-top:40px">
+                <td><a href="startTrade.html" style="padding: 12px 16px;">Trade Shop</a></td>
+                <td> <img src="trade.png" alt="" width=30px height=30px ></td>
+              </tr>
+            </table>
+          </div>  </div>
+
+          </ul>
+          </nav>
+
+          <div align=center>
+          <h1 style="color:gold;text-shadow: 3px 3px black; font-size:4rem;margin-top:70px">START TRADING</h1>
+          <h1><a href="mailto:Tradez_Co@outlook.com" class="no3" style="margin-top:10px;color:white; text-shadow:1px 1px black;font-size:20px;background-color:#d3d3d3" >WANT TO ADD YOUR ITEMS?</a> </h1>
+        </div>
+
+    <div class="filters" style="float:left; color:#000;margin-left:2px;width:350px;margin-top:20px">
+
+      <h2 class="characteristics" style="color:	gold;text-shadow: 1px 1px black;">Filter The Items</h2>
+        <br>
+        <br>
+        <p class="toFilter">Maximum Age of Item: <input type="number" name="" value="" class="inputcustom" min="0" step="1" id="ageGiven"></p>
+        <br>
+        <p class="toFilter"> Category:</p> <br>
+
+          <input type="checkbox" name="Cat1" value="Fashion" style="margin-left:50px;" class="categoryItem"><span style="padding-left:10px">Fashion</span><br>
+          <input type="checkbox" name="Cat2" value="Electronics and Wearables" style="margin-left:50px" class="categoryItem"><span style="padding-left:10px">Electronics</span><br>
+          <input type="checkbox" name="Cat3" value="Video Games" style="margin-left:50px" class="categoryItem"><span style="padding-left:10px">Video Games</span><br>
+          <input type="checkbox" name="Cat4" value="Books" style="margin-left:50px" class="categoryItem"><span style="padding-left:10px">Books</span><br>
+          <input type="checkbox" name="Cat5" value="Cosmetics and Body Care" style="margin-left:50px" class="categoryItem"><span style="padding-left:10px">Cosmetics and Body Care</span><br>
+          <input type="checkbox" name="Cat6" value="Toys" style="margin-left:50px" class="categoryItem"><span style="padding-left:10px">Toys</span><br>
+          <input type="checkbox" name="Cat7" value="Furniture and Household Goods" style="margin-left:50px" class="categoryItem"><span style="padding-left:10px">Furniture and Household Goods</span><br>
+          <p align=center><button type="button" id="filter" name="button" class="no" style="margin-top:30px;color:#000;width:350px">Filter</button></p>
+          <p align=center><button type="button" id="reset" name="button" class="no" style="margin-top:30px;color:#000;width:350px">Reset Filter</button></p>
+
+    </div>
+
+        <div class="filters" style="float:right;color:#000;margin-right:2px;width:400px;margin-top:20px" align=center>
+
+            <h2 class="characteristics" style="color:	gold;text-shadow: 1px 1px black;">Item's Features</h2>
+            <br><br>
+            <p class="toFilter" id="nameItem">Name of Item:</p>
+            <br><br>
+            <p class="toFilter" id="ageItem">Age of Item:</p>
+            <br><br>
+            <p class="toFilter" id="priceItem">Price of Item: </p>
+            <br><br>
+            <p class="toFilter" id="descriptionItem">Description of Item: </p>
+            <br><br>
+            <p class="toFilter" id="generalItem">General info of Item: </p>
+            <br><br>
+            <p class="toFilter" id="categoryItem">Category: </p>
+            <br><br>
+            <p class="toFilter" id="sellerItem">Name of Seller: </p>
+            <br><br>
+            <p align=center>
+              <button type="button" name="button" class="no" id="contactSeller" style="margin-top:30px;color:black;width:350px;display:none">Contact the Trader</button></p>
+
+
+        </div>
+      <div  style="float:center;color:#000;margin-left:400px;margin-right:30px;margin-top:20px; overflow:auto; height:1000px" id="tableItems" class="tableTrade">
+        <table><tbody>
+          <tr id="row0">
+            <td>
+              <img src="IphoneX.jpg" alt="" id="img0">
+            </td>
+            <td>
+              <h3>Name: Iphone X</h3><br><br>
+              <h3>Trader: John_Willy</h3>
+            </td>
+          </tr>
+
+          <tr id="row1">
+            <td>
+              <img src="LouisVuitton.jpg" alt="" id="img1">
+            </td>
+            <td>
+              <h3>Name: Louis Vuitton Wallet</h3><br><br>
+              <h3>Trader: Robert_De</h3>
+            </td>
+          </tr>
+
+          <tr id="row2">
+            <td>
+              <img src="WiiResortGames.jpg" alt="" id="img2">
+            </td>
+            <td>
+              <h3>Name: Wii Resort Games</h3><br><br>
+              <h3>Trader: KatieReb</h3>
+            </td>
+          </tr>
+
+          <tr id="row3">
+            <td>
+              <img src="BeatsHeadphones.jpg" alt="" id="img3">
+            </td>
+            <td>
+              <h3>Name: Beats Headphones</h3><br><br>
+              <h3>Trader: Sarah123_Hill</h3>
+            </td>
+          </tr>
+
+          <tr id="row4">
+            <td>
+              <img src="Airpods1.jpg" alt="" id="img4">
+            </td>
+            <td>
+              <h3>Name: Air pods 1</h3><br><br>
+              <h3>Trader: Yoon_Seri145</h3>
+            </td>
+          </tr>
+
+          <tr id="row5">
+            <td>
+              <img src="AppleWatch.jpg" alt="" id="img5">
+            </td>
+            <td>
+              <h3>Name: Apple Watch Series 5</h3><br><br>
+              <h3>Trader: HyunBin198</h3>
+            </td>
+          </tr>
+
+          <tr id="row6">
+            <td>
+              <img src="Laptop.jpg" alt="" id="img6">
+            </td>
+            <td>
+              <h3>Name:HP Laptop</h3><br><br>
+              <h3>Trader: Do_Yung</h3>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+
+
+
+      </div>
+
+      <script>
+function openNav() {
+  document.getElementById("moving").style.height = "150%";
+}
+
+function closeNav() {
+  document.getElementById("moving").style.height = "1%";
+}
+
+window.onload = function(){
+
+  var http = new XMLHttpRequest();
+
+  var filter = document.getElementById('filter');
+  var reset = document.getElementById('reset');
+  var contact = document.getElementById('contactSeller');
+
+  var img0 = document.getElementById("img0");
+  var img1 = document.getElementById("img1");
+  var img2 = document.getElementById("img2");
+  var img3 = document.getElementById("img3");
+  var img4 = document.getElementById("img4");
+  var img5 = document.getElementById("img5");
+  var img6 = document.getElementById("img6");
+
+  http.onreadystatechange = function(){
+    if (http.readyState == 4 && http.status ==200){
+       var textResponse = http.responseText;
+      var items = JSON.parse(textResponse);
+      img0.addEventListener("mouseover",function(){
+        document.getElementById("nameItem").innerHTML = items[0].Name;
+        document.getElementById("ageItem").innerHTML = items[0].Age;
+        document.getElementById("priceItem").innerHTML = items[0].Price;
+        document.getElementById("descriptionItem").innerHTML = items[0].Description;
+        document.getElementById("generalItem").innerHTML = items[0].GenInfo;
+        document.getElementById("categoryItem").innerHTML = items[0].Category;
+        document.getElementById("sellerItem").innerHTML = items[0].trader;
+        contact.style.display="block";
+      });
+
+      img1.addEventListener("mouseover",function(){
+        document.getElementById("nameItem").innerHTML = items[1].Name;
+        document.getElementById("ageItem").innerHTML = items[1].Age;
+        document.getElementById("priceItem").innerHTML = items[1].Price;
+        document.getElementById("descriptionItem").innerHTML = items[1].Description;
+        document.getElementById("generalItem").innerHTML = items[1].GenInfo;
+        document.getElementById("categoryItem").innerHTML = items[1].Category;
+        document.getElementById("sellerItem").innerHTML = items[1].trader;
+        contact.style.display="block";
+      });
+
+      img2.addEventListener("mouseover",function(){
+        document.getElementById("nameItem").innerHTML = items[2].Name;
+        document.getElementById("ageItem").innerHTML = items[2].Age;
+        document.getElementById("priceItem").innerHTML = items[2].Price;
+        document.getElementById("descriptionItem").innerHTML = items[2].Description;
+        document.getElementById("generalItem").innerHTML = items[2].GenInfo;
+        document.getElementById("categoryItem").innerHTML = items[2].Category;
+        document.getElementById("sellerItem").innerHTML = items[2].trader;
+        contact.style.display="block";
+      });
+      img3.addEventListener("mouseover",function(){
+        document.getElementById("nameItem").innerHTML = items[3].Name;
+        document.getElementById("ageItem").innerHTML = items[3].Age;
+        document.getElementById("priceItem").innerHTML = items[3].Price;
+        document.getElementById("descriptionItem").innerHTML = items[3].Description;
+        document.getElementById("generalItem").innerHTML = items[3].GenInfo;
+        document.getElementById("categoryItem").innerHTML = items[3].Category;
+        document.getElementById("sellerItem").innerHTML = items[3].trader;
+        contact.style.display="block";
+      });
+      img4.addEventListener("mouseover",function(){
+        document.getElementById("nameItem").innerHTML = items[4].Name;
+        document.getElementById("ageItem").innerHTML = items[4].Age;
+        document.getElementById("priceItem").innerHTML = items[4].Price;
+        document.getElementById("descriptionItem").innerHTML = items[4].Description;
+        document.getElementById("generalItem").innerHTML = items[4].GenInfo;
+        document.getElementById("categoryItem").innerHTML = items[4].Category;
+        document.getElementById("sellerItem").innerHTML = items[4].trader;
+        contact.style.display="block";
+      });
+      img5.addEventListener("mouseover",function(){
+        document.getElementById("nameItem").innerHTML = items[5].Name;
+        document.getElementById("ageItem").innerHTML = items[5].Age;
+        document.getElementById("priceItem").innerHTML = items[5].Price;
+        document.getElementById("descriptionItem").innerHTML = items[5].Description;
+        document.getElementById("generalItem").innerHTML = items[5].GenInfo;
+        document.getElementById("categoryItem").innerHTML = items[5].Category;
+        document.getElementById("sellerItem").innerHTML = items[5].trader;
+        contact.style.display="block";
+      });
+      img6.addEventListener("mouseover",function(){
+        document.getElementById("nameItem").innerHTML = items[6].Name;
+        document.getElementById("ageItem").innerHTML = items[6].Age;
+        document.getElementById("priceItem").innerHTML = items[6].Price;
+        document.getElementById("descriptionItem").innerHTML = items[6].Description;
+        document.getElementById("generalItem").innerHTML = items[6].GenInfo;
+        document.getElementById("categoryItem").innerHTML = items[6].Category;
+        document.getElementById("sellerItem").innerHTML = items[6].trader;
+        contact.style.display="block";
+      });
+
+      filter.addEventListener('click', function(){
+        var categ = document.getElementsByClassName("categoryItem");
+        var itemCat ="";
+        for (var i =0; i<7;i++){
+          if (categ[i].checked){
+            itemCat += categ[i].value +"/";
+          }
+        }
+        console.log(itemCat);
+        var ageGiven = document.getElementById("ageGiven").value;
+        if (ageGiven!=""){
+            console.log(ageGiven);
+        }
+        var jCategory;
+        var jAge;
+        if (itemCat !=""){
+          catArray = itemCat.split("/");
+        }
+
+        for (var fill=0;fill<items.length;fill++){
+           jCategory = items[fill].Category;
+           jAge = items[fill].Age;
+
+           if (ageGiven !="" && itemCat !=""){
+              if(catArray.length!=0){
+                for (var i =0;i<catArray.length-1;i++){
+
+                  if (ageGiven >= jAge && jCategory == catArray[i]){
+                    document.getElementById("row"+fill).style.display="block";
+                  }else{
+                    document.getElementById("row"+fill).style.display="none";
+                  }
+               }
+
+             }else{
+               if (ageGiven >= jAge){
+                 document.getElementById("row"+fill).style.display="block";
+               }else{
+                 document.getElementById("row"+fill).style.display="none";
+               }
+             }
+
+
+            }else{
+              alert("Please fill all filters");
+            }
+
+
+           }
+
+      });
+      reset.addEventListener("click", function(){
+        for (var j=0;j<items.length;j++){
+          document.getElementById('row'+j).style.display="block";
+
+        }
+        var categ = document.getElementsByClassName("categoryItem");
+        var itemCat ="";
+        for (var i =0; i<7;i++){
+          if (categ[i].checked){
+             categ[i].checked=false;
+          }
+        }
+        document.getElementById("ageGiven").value = "";
+      });
+
+      contact.addEventListener("click",function(){
+        alert("Thank you For you using Trade! We have contacted the trader, and we will reach you soon through your email");
+      });
+    }
+  };
+  http.open('GET', 'itemTrade.json',true);
+  http.send();
+
+};
+
+
+
+</script>
+
+
+  </body>
+</html>

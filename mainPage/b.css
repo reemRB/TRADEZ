@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+.img11 img{
+position: absolute;
+margin-top: 15px;
+margin-left: 10px;
+width: 100px;
+height: 100px;
+
+
+  }
+
+
+  #formleft
+{
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+#formright
+{
+  float: right;
+  width: 55%;
+  text-align: center;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+}
+
+.lead {
+  font-size: 1px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flow-root;
+width: 100vh;
+height: 10vh;
+margin-left: 100vh;
+
+
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 2px solid white;
+border-radius:20px;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+  color:#1E90FF	;
+}
+
+.navbar ul li button{
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 2px solid white;
+border-radius:20px;
+background-color: transparent;
+cursor: pointer;
+}
+
+.navbar ul li button:hover {
+  background-color: white;
+  color:#1E90FF	;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+section p {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+
+section#home {
+  background-image: url("Home.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+section#about {
+  background-image: url("contact.png");
+  background-position: center;
+  background-size: cover;
+
+}
+
+section#last {
+  background-image: url("pp.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+section#news {
+  background-image: url("bike.png");
+  background-position: center;
+  background-size: cover;
+
+}
+/* ========================================================== */
+
+
+.one1{
+
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  position: absolute;
+  left: -470px;
+
+ padding-right: 200px;
+
+}
+
+.one{
+  height:100%;
+  width:100%;
+  background-image: url("mmm.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+
+}
+.signin {
+  width:390px;
+  height:480px;
+  position: relative;
+  margin:6% auto;
+  background: #fff;
+  padding : 5px;
+}
+.box{
+  width:220px;
+  margin:25px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+
+}
+.loginon{
+  padding:10px 30px;
+  cursor:pointer;
+  background: transparent;
+  border:0;
+  outline:none;
+  position:relative;
+
+}
+
+.toggle{
+  padding:22px 45px;
+  cursor:pointer;
+  background: transparent;
+  border:0;
+  outline:none;
+  position:relative;
+  font-size: 51px;
+  font-family: 'Didact Gothic';
+
+}
+#yes{
+top:0;
+left:0;
+position: absolute;
+width:110px;
+height:100%;
+background:linear-gradient(to right, #FFCC00
+ , #0A47AD
+);
+border-radius:30px;
+transition: .5s;
+}
+.input{
+  top:180px;
+  position: absolute;
+  width:280px;
+  transition: .5s;
+}
+
+.inputno{
+width:100%;
+padding:10px 0;
+margin:5px 0;
+border-left:0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1 solid #999;
+outline:none;
+background: transparent;
+
+}
+.sumbit-btn{
+width:85%;
+padding: 10px 30px;
+cursor: pointer;
+display:block;
+margin: auto;
+background:#000066;
+border: 0;
+outline: none;
+border-radius: 30px;
+font-size: 18px;
+color : white;
+}
+.boo{
+  margin: 30px 10px 30px 0;
+
+
+}
+
+.sumbit-btn{
+width:85%;
+padding: 10px 30px;
+cursor: pointer;
+display:block;
+margin: 7;
+background:#000066;
+border: 0;
+outline: none;
+border-radius: 30px;
+font-size: 18px;
+color : white;
+}
+
+#contactus{
+  left:50px;
+
+}
+#login{
+  left:50px;
+
+}
+
+#register{
+  left:450px;
+}
+.title{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  margin-top: 40px;
+}
+
+.no{
+  border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.6s ease;
+  background-color: Transparent;
+  cursor: pointer;
+  font-size: 25px;
+  text-shadow: 1px 1px #000000;
+  font-weight: bold;
+  width:100px;
+}
+.no:hover{
+  background-color: white;
+  color: #000;
+  text-shadow: 3px 3px #fff;
+
+}
+
+.no2{
+  border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.6s ease;
+  background-color: Transparent;
+  cursor: pointer;
+  font-size: 25px;
+  text-shadow: 1px 1px #000000;
+  font-weight: bold;
+}
+.no2:hover{
+
+  background-color: #a6a6a6;
+  text-shadow: 3px 3px #fff;
+
+}
+
+/* ========================================================== */
+
+.MENU {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.MENU-NU {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.MENU a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  border-left: 3px solid transparent;
+
+}
+
+.MENU a:hover, .MENU a:focus {
+  color: #ffbf00	;
+  background: #1e1e1e;
+  border-left-color: lightblue;
+}
+
+.MENU .XX {
+  position: absolute;
+  top: 22px;
+  right: 40px;
+  font-size: 55px;
+}
+.lar {
+  cursor: pointer;
+  font-size: 40px;
+  height: 10vh;
+  color: black;
+  border:none;
+  padding: 7px 14px;
+
+}
+
+span{
+  color: #777;
+  font-size: 12px;
+  top: 10px;
+  position: absolute;
+}
+
+.slide-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.imageFooter{
+  padding-left: 10px;
+  padding-right: 10px;
+  height:50px;
+  width:55px;
+
+
+}
+.imageFooter:hover{
+
+}

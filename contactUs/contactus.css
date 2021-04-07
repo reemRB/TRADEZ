@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0px;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic';
+
+
+}
+
+body {
+  background-image: url("pp.png");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.social {
+  position: fixed;
+  top: 46%;
+  right: -1%;
+
+}
+
+
+.social a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.social a:hover {
+  background-color: #000;
+}
+
+.f {
+  background: #3B5998;
+}
+
+.t {
+  background: #55ACEE;
+
+}
+
+.g{
+  background-color: #dd4b39;
+
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flow-root;
+  width: 100vh;
+  height: 50vh;
+  margin-left: 100vh;
+  color:white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  color:white;
+  font-size: 16px;
+    font-family:'Didact Gothic';
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  border: 2px solid white;
+  border-radius:20px;
+}
+
+.navbar ul li a:hover {
+  background-color: black;
+  color:lightblue	;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+
+.one{
+
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  position: absolute;
+  left: -470px;
+
+ padding-right: 200px;
+
+}
+.signin {
+  width:390px;
+  height:480px;
+  position: relative;
+  margin:6% ;
+margin-right: auto;
+  background: white;
+  padding : 15px;
+}
+.box{
+  width:560px;
+  height: 80px;
+  margin:22px auto;
+  position: relative;
+color:  yellow;
+  border-radius: 30px;
+
+}
+.toggle{
+  padding:22px 45px;
+  cursor:pointer;
+  background: transparent;
+  border:0;
+  outline:none;
+  position:relative;
+  font-size: 51px;
+    font-family: 'Didact Gothic';
+
+}
+#yes{
+top:0;
+left:0;
+position: absolute;
+width:11px;
+height:200px;
+background:gold;
+);
+border-radius:30px;
+transition: .5s;
+}
+.input-group{
+  top:180px;
+  position: absolute;
+  width:280px;
+  transition: .5s;
+}
+
+.input-field{
+width:100%;
+padding:10px 0;
+margin:5px 0;
+border-left:0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1 solid #999;
+outline:none;
+background: transparent;
+font-size: 18px;
+
+}
+.sumbit-btn{
+width:85%;
+padding: 10px 30px;
+cursor: pointer;
+display:block;
+margin: 20px;
+background:#000066;
+
+
+border: 0;
+outline: none;
+border-radius: 30px;
+font-size: 18px;
+color : white;
+}
+.check-box{
+  margin: 30px 10px 30px 0;
+
+
+}
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+#contactus{
+  left:50px;
+
+}

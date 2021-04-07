@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Contact us </title>
+ <link href="contactus.css" rel="stylesheet" type="text/css"/>  </head>
+
+ <body>
+   <div class="container">
+     <nav class="navbar">
+       <ul>
+         <li><a href="Home.html#home">Home </a></li> </ul>
+
+         <div class="social">
+         <a href="#" class="f"><p>Facebook</p></i></a>
+         <a href="#" class="t"><p>Twitter</p></i></a>
+         <a href="#" class="g"><p>Google</p></i></a>
+         </div>
+
+<div class="one">
+ <div class="signin">
+
+   <div class="box">
+
+     <div id="yes"> </div>
+     <button type="button" class="toggle" onclick="contact()"> Drop us a line
+ </button>
+     </div>
+ <form id="contactus" class="input-group">
+   <input type="text" class="input-field" placeholder="Full Name" required>
+   <input type="text" class="input-field" placeholder="Email Address" required>
+   <input type="text" class="input-field" placeholder="Your Subject" required>
+   <input type="text" class="input-field" placeholder="Your Message" required>
+<div id="XML">
+   <button type="submit" class="sumbit-btn" onclick="xmm()">Submit </button>   </form>
+</div>
+
+</div>
+ </div>
+</nav></div>
+<script>
+function xmm() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange= function(){
+    if(this.readystatechange==4 && this.status==200){
+      document.getElementById("XML").innerHTML=this.responseText;
+    }
+  };
+  xhttp.open("GET","ajax_info.txt",true);
+  xhttp.send();
+}
+</script>
+
+
+
+
+
+
+
+
+
+   </body>
+   </html>
